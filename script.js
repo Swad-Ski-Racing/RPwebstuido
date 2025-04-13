@@ -38,3 +38,54 @@ window.addEventListener('scroll', () => {
   const scrollPercentage = (scrollPosition / documentHeight) * 100;
   progressBar.style.width = `${scrollPercentage}%`;
 });
+
+// Popup behavior
+document.addEventListener('DOMContentLoaded', function () {
+  // Show popup after 1 second
+  setTimeout(() => {
+    document.getElementById('popup').classList.add('active');
+  }, 1000);
+
+  // Close the popup when the close button is clicked
+  document.getElementById('closePopup').addEventListener('click', function () {
+    document.getElementById('popup').classList.remove('active');
+  });
+
+  // Scroll to "Request a Quote" section when "Request a Quote" button is clicked
+  document.getElementById('scrollToQuotePopup').addEventListener('click', function () {
+    const targetSection = document.getElementById('quote');  // Ensure this id matches your "Request a Quote" section
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('popup').classList.remove('active'); // Close popup after action
+    }
+  });
+
+  // Scroll to "Book a Zoom Call" section when "Book a Call" button is clicked
+  document.getElementById('bookCallPopup').addEventListener('click', function () {
+    const targetSection = document.getElementById('book-call');  // Ensure this id matches your "Book a Zoom Call" section
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('popup').classList.remove('active'); // Close popup after action
+    }
+  });
+});
+
+// Handle booking form submission
+document.getElementById('booking-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const dateTime = document.getElementById('date-time').value;
+  
+  // For now, this will just log the data. Replace with form submission code.
+  console.log('Name:', name);
+  console.log('Email:', email);
+  console.log('Preferred Date & Time:', dateTime);
+  
+  // Display confirmation message
+  document.getElementById('confirmation-message').style.display = 'block';
+  
+  // Clear the form fields after submission
+  document.getElementById('booking-form').reset();
+});
