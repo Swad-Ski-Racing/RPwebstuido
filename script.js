@@ -89,4 +89,3 @@ document.getElementById('booking-form').addEventListener('submit', function(even
   // Clear the form fields after submission
   document.getElementById('booking-form').reset();
 });
-
