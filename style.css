@@ -72,7 +72,13 @@
     font-size: 1.5rem;
     }
 
-   
+    .blue-line {
+        height: 10px;
+        background-color: #0077b6;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
     
     .section {
     padding: 3rem 2rem;
@@ -82,7 +88,7 @@
     .sectionone {
         padding: 3rem 2rem;
     text-align: center;
-    background-color: #00b4d8;
+    background-color: #0077b6;
     border-radius: 30px;
     margin-left: 20px;
     margin-right: 20px;
