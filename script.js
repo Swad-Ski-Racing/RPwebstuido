@@ -90,5 +90,3 @@ document.getElementById('booking-form').addEventListener('submit', function(even
   document.getElementById('booking-form').reset();
 });
 
-window.onload = function() {
-  window.scrollTo(0, 0);
