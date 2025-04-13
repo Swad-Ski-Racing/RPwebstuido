@@ -70,23 +70,60 @@ We don’t just create websites – we create customized, tailor-made experience
 </div>
 </section>
 <section class="section" data-aos="fade-up">
-    <h2>Our Previous Client</h2>
-    <div class="responsive-iframe-container">
-      <iframe src="https://www.jmosportspark.co.uk" 
-              loading="lazy" 
-              allowfullscreen>
-      </iframe>
-    </div>
-  </section>
-<section class="section" id="quote" data-aos="fade-up">
-    <h2>Request a Quote</h2>
-<form action="https://formspree.io/f/your-form-id" method="POST">
-<input type="text" name="name" placeholder="Your Name" required />
-<input type="email" name="email" placeholder="Your Email" required />
-<textarea name="project" placeholder="Tell us about your project..." required></textarea>
-<button type="submit" class="ripple">Send Request</button>
-</form>
+  <h2>Our Previous Client</h2>
+  <div class="responsive-iframe-container">
+    <iframe src="https://www.jmosportspark.co.uk" 
+            loading="lazy" 
+            allowfullscreen>
+    </iframe>
+  </div>
 </section>
+
+<section class="section" id="book-call" data-aos="fade-up">
+  <h2>Book a Zoom Call</h2>
+  <p>Let’s chat about your project! Select a date and time, and we’ll confirm your Zoom call.</p>
+  
+  <form id="booking-form" class="booking-form" action="https://formspree.io/f/mayknaaa" method="POST">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your name">
+    
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email">
+    
+    <label for="date-time">Preferred Date & Time:</label>
+    <input type="datetime-local" id="date-time" name="date-time" required>
+    
+    <button type="submit" class="book-call-button">Book a Call</button>
+  </form>
+  
+  <div id="confirmation-message" class="confirmation-message" style="display: none;">
+    <p>Thank you for booking a Zoom call! We’ll confirm your details shortly.</p>
+  </div>
+</section>
+
+<section class="section" id="quote" data-aos="fade-up">
+  <h2>Request a Quote</h2>
+  <p>Let’s chat about your project! Tell us more about your project ideas, and we’ll turn them into reality.</p>
+
+  <form id="quote-form" class="booking-form" action="https://formspree.io/f/your-form-id" method="POST">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your name">
+    
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email">
+    
+    <label for="project">Your Project Needs:</label>
+    <textarea id="project" name="project" required placeholder="Tell us about your project..."></textarea>
+    
+    <button type="submit" class="book-call-button">Send Request</button>
+  </form>
+  
+  <div id="confirmation-message" class="confirmation-message" style="display: none;">
+    <p>Thank you for your request! We’ll get in touch with you shortly.</p>
+  </div>
+</section>
+
+
 
 <footer>
 <p>&copy; 2025 RP Web Studios.</p>
@@ -98,5 +135,17 @@ We don’t just create websites – we create customized, tailor-made experience
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="script.js"></script>
+
+<div class="popup-overlay" id="popup">
+  <div class="popup">
+    <div class="close" id="closePopup">&times;</div>
+    <h2>Receive free hosting if you apply now.</h2>
+    <button id="scrollToQuotePopup">Request a Quote</button>  <!-- Updated ID -->
+    <p>Or</p>
+    <button id="bookCallPopup">Book a Call</button> <!-- Updated ID -->
+  </div>
+</div>
+
+
 </body>
 </html>
