@@ -125,7 +125,22 @@
     justify-content: center;
     gap: 1.5rem;
     }
-    
+    .service-card a {
+      display: block;
+      width: 100%;
+      height: 200px; /* set this to whatever height you want the image area */
+      border-radius: 10px;
+      overflow: hidden;
+  }
+  
+  .service-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 10px;
+  }
+  
     .service-card {
     background: var(--card);
     padding: 1.5rem;
