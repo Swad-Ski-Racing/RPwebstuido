@@ -1,171 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>RP Web Studios</title>
-<link rel="stylesheet" href="style.css" />
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RP Web Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="top-bar">
-<button id="theme-toggle" aria-label="Toggle dark mode">
-<svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
-<path d="M12 4.354a.5.5 0 0 1 .5.5V6.5a.5.5 0 0 1-1 0V4.854a.5.5 0 0 1 .5-.5zm0 11.292a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM4.354 12a.5.5 0 0 1 .5-.5H6.5a.5.5 0 0 1 0 1H4.854a.5.5 0 0 1-.5-.5zm12.292 0a.5.5 0 0 1 .5-.5h2.146a.5.5 0 0 1 0 1H17.146a.5.5 0 0 1-.5-.5zM7.05 7.05a.5.5 0 0 1 .707 0l1.414 1.414a.5.5 0 0 1-.707.707L7.05 7.757a.5.5 0 0 1 0-.707zm8.485 8.485a.5.5 0 0 1 .707 0l1.414 1.414a.5.5 0 1 1-.707.707l-1.414-1.414a.5.5 0 0 1 0-.707zM4.354 19.646a.5.5 0 0 1 .707 0l1.414-1.414a.5.5 0 1 1 .707.707l-1.414 1.414a.5.5 0 0 1-.707-.707zM16.95 7.05a.5.5 0 0 1 .707 0l1.414 1.414a.5.5 0 0 1-.707.707L16.95 7.757a.5.5 0 0 1 0-.707z"/>
-</svg>
-<svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" class="icon hidden" viewBox="0 0 24 24">
-<path d="M21 12.79A9 9 0 0 1 11.21 3a7 7 0 1 0 9.79 9.79z"/>
-</svg>
-</button>
-</div>
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="logo">RP</div>
+    <nav>
+      <a href="#">Products</a>
+      <a href="#">AI Services</a>
+      <a href="#">Contact us</a>
+    </nav>
+  </header>
 
-<header class="hero">
-    <div class="top">
-<h1 class="logo-title">RP <span>Web Studios</span></h1>
-
-<p class="slogan">Where creativity meets functionality</p>
-</header>
-<div class="cta">
-    <a href="#quote" class="cta-button">Request a Quote</a>
-  </div>
-
-<div>
-    <div class="blue-line"></div>
-</div>
-<section class="section" data-aos="fade-up">
-<h2>Who We Are</h2>
-<p>
-RP Web Studios is dedicated to building high-quality custom websites for businesses. We specialize in bringing creativity to life while ensuring seamless functionality.
-</p>
-</section>
-<section class="sectionone" data-aos="fade-up">
-<h2>Why Choose Us?</h2>
-<p>
-We don’t just create websites – we create customized, tailor-made experiences that are designed to fit your business perfectly. Our approach includes:
-</p>
-<ul>
-<li data-aos="fade-up" data-aos-delay="100">Fully custom-designed websites</li>
-<li data-aos="fade-up" data-aos-delay="200">Mobile-first and responsive designs</li>
-<li data-aos="fade-up" data-aos-delay="300">SEO-optimized for better visibility</li>
-<li data-aos="fade-up" data-aos-delay="400">Ongoing support and maintenance</li>
-</ul>
-</section>
-
-<section class="section services" data-aos="fade-up">
-<h2>Our Services</h2>
-<div class="service-list">
-<div class="service-card" data-aos="zoom-in">
-<h3>Custom Design</h3>
-<p>Unique layouts, clean code, and modern visuals tailored to your brand.</p>
-</div>
-<div class="service-card" data-aos="zoom-in" data-aos-delay="100">
-<h3>Mobile First</h3>
-<p>Responsive design across all devices for a seamless user experience.</p>
-</div>
-<div class="service-card" data-aos="zoom-in" data-aos-delay="200">
-<h3>Ongoing Support</h3>
-<p>Continued maintenance and performance enhancements after launch.</p>
-</div>
-</div>
-</section>
-
-<section class="section services" data-aos="fade-up">
-  <h2>Our Previous Clients</h2>
-  <div class="service-list">
-    <div class="service-card" data-aos="zoom-in">
-      <a href="https://www.jmosportspark.co.uk/" target="_blank">
-        <img src="jmo.png" alt="JMO Sports Park">
-      </a>
-      <h3>JMO Sports Park</h3>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>RP Web Studio</h1>
+        <p class="tagline">Where creativity meets functionality</p>
+        <button class="cta-button">Get Started</button>
+        <p class="services">AI Agents · Website Development · Mobile Apps · SEO</p>
+      </div>
     </div>
+  </section>
+  
+  
 
-    <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
-      <a href="https://swadskiracing.vercel.app/" target="_blank">
-        <img src="swad.png" alt="Swad Ski Racing">
-      </a>
-      <h3>Swad Ski Racing</h3>
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2 class="animate">What Our Clients Say</h2>
+    <div class="testimonial-cards">
+      <div class="card animate">
+        <h3>LYNE MTB</h3>
+        <div class="stars">★★★★★</div>
+        <p>RP Web Studio transformed our website and customer support streamlining the process and saving us thousands in the long run</p>
+      </div>
+      <div class="card animate">
+        <h3>LYNE MTB</h3>
+        <div class="stars">★★★★★</div>
+        <p>RP Web Studio transformed our website and customer support streamlining the process and saving us thousands in the long run</p>
+      </div>
+      <div class="card animate">
+        <h3>LYNE MTB</h3>
+        <div class="stars">★★★★★</div>
+        <p>RP Web Studio transformed our website and customer support streamlining the process and saving us thousands in the long run</p>
+      </div>
     </div>
+  </section>
+  
 
-    <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
-      <a href="https://ptc-trees-russ-pikes-projects.vercel.app/" target="_blank">
-        <img src="Screenshot 2025-04-14 at 15.32.25.png" alt="PTC Tree Care">
-      </a>
-      <h3>PTC Tree Care</h3>
+  <!-- Process -->
+  <section class="process">
+    <h2 class="animate">The Process</h2>
+    <div class="process-steps">
+      <div class="step animate">
+        <div class="icon">📞</div>
+        <div>
+          <h3>We Listen</h3>
+          <p>We understand your user requirements and plan the next steps for the project</p>
+        </div>
+      </div>
+      <div class="step animate">
+        <div class="icon">✏️</div>
+        <div>
+          <h3>We Build</h3>
+          <p>We design your project and with frequent discussions finalise the design. Then we move to building the project</p>
+        </div>
+      </div>
+      <div class="step animate">
+        <div class="icon">🏳️</div>
+        <div>
+          <h3>You Launch</h3>
+          <p>After we finish work, you officially launch your project or you can request one of our social media experts to handle this</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<section class="section" id="book-call" data-aos="fade-up">
-  <h2>Book a Zoom Call</h2>
-  <p>Let’s chat about your project! Select a date and time, and we’ll confirm your Zoom call.</p>
+  <!-- CTA -->
+  <section class="cta animate">
+    <h2>Integrate AI to your business</h2>
+    <p>Why spend thousands every month on workers when you can have AI performing the task 24/7</p>
+    <button class="cta-button">Explore</button>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Reece – Director<br>
+          <a href="mailto:reece@rpwebstudio.co.uk">reece@rpwebstudio.co.uk</a>
+        </p>
+        <p>Euan – Director<br>
+          <a href="mailto:euan@rpwebstudio.co.uk">euan@rpwebstudio.co.uk</a>
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <p>
+          <a href="https://www.instagram.com/rpwebstudio/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 RP Web Studio. All rights reserved.</p>
+    </div>
+  </footer>
   
-  <form id="booking-form" class="booking-form" action="https://formspree.io/f/xanokljv" method="POST">
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name" required placeholder="Enter your name">
-    
-    <label for="email">Your Email:</label>
-    <input type="email" id="email" name="email" required placeholder="Enter your email">
-    
-    <label for="date-time">Preferred Date & Time:</label>
-    <input type="datetime-local" id="date-time" name="date-time" required>
-    
-    <button type="submit" class="book-call-button">Book a Call</button>
-  </form>
-  
-  <div id="confirmation-message" class="confirmation-message" style="display: none;">
-    <p>Thank you for booking a Zoom call! We’ll confirm your details shortly.</p>
-  </div>
-</section>
-<div>
-    <div class="blue-line"></div>
-</div>
-<section class="section" id="quote" data-aos="fade-up">
-  <h2>Request a Quote</h2>
-  <p>Let’s chat about your project! Tell us more about your project ideas, and we’ll turn them into reality.</p>
+  <script src="script.js"></script>
+<!-- Chatbot Root Button and Panel -->
+<div id="rp-chat-root"></div>
 
-  <form id="quote-form" class="booking-form" action="https://formspree.io/f/xanokljv" method="POST">
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name" required placeholder="Enter your name">
-    
-    <label for="email">Your Email:</label>
-    <input type="email" id="email" name="email" required placeholder="Enter your email">
-    
-    <label for="project">Your Project Needs:</label>
-    <textarea id="project" name="project" required placeholder="Tell us about your project..."></textarea>
-    
-    <button type="submit" class="book-call-button">Send Request</button>
-  </form>
-  
-  <div id="confirmation-message" class="confirmation-message" style="display: none;">
-    <p>Thank you for your request! We’ll get in touch with you shortly.</p>
-  </div>
-</section>
+<!-- Chatbot Styles -->
+<link rel="stylesheet" href="chatbot.css">
 
-
-
-<footer>
-<p>&copy; 2025 RP Web Studios.</p>
-</footer>
-
-<div class="progress-bar">
-<div class="fill"></div>
-</div>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="script.js"></script>
-
-<div class="popup-overlay" id="popup">
-  <div class="popup">
-    <div class="close" id="closePopup">&times;</div>
-    <h2>Receive free hosting if you apply now.</h2>
-    <button id="scrollToQuotePopup">Request a Quote</button>  <!-- Updated ID -->
-    <p>Or</p>
-    <button id="bookCallPopup">Book a Call</button> <!-- Updated ID -->
-  </div>
-</div>
-
+<!-- Chatbot Script -->
+<script src="chatbot.js"></script>
 
 </body>
 </html>
